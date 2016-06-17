@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    {% block meta %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> {% endblock %}
+    <meta name="keywords" content="{% block keyword%}轻松音乐{% endblock%}">
+    <meta name="description" content="{% block description%}写代码必备{% endblock%}">
+    <title>{% block title%}base{% endblock %}</title>
+    {% block head %}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}"> {% endblock %}
+</head>
+
+<body>
+    {% block content %} {% endblock %}
+</body>
+{%block scripts%}
+<script src="{{url_for('static',filename='js/jquery-1.12.4.js')}}"></script>
+{%endblock%}
+
+</html>

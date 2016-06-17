@@ -1,0 +1,52 @@
+.table .num td {
+    padding: 0;
+    font-size: 20px;
+    height: 40px;
+}
+
+.table .num span {
+    border-radius: 50%;
+}
+
+.animals label {
+    margin: 10px;
+}
+.spenums{
+    background:rgba(195,195,195,.6);
+}
+.spenums label {
+    width: 22%;
+    margin: 2px;
+    position: relative;
+}
+.balllab input{
+    opacity: 0;
+    position: absolute;
+    left:20px;
+    top:20px;
+}
+.balllab .ball{
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+}
+.balllab .ball.red{
+    background: url(../img/red.png) no-repeat center center;
+    background-size: 80%;
+  
+}
+.balllab .ball.blue{
+    background: url(../img/blue.png) no-repeat center center;
+     background-size: 80%;
+}
+.balllab .ball.green{
+    background: url(../img/green.png) no-repeat center center;
+     background-size: 80%;
+}
+
+.balllab input:checked + .ball{
+      background-color: rgba(163,163,163,1);
+}
